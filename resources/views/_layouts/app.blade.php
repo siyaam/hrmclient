@@ -9,6 +9,8 @@
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+
     <!-- Google fonts - Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
@@ -29,7 +31,7 @@
   <body>
     <div class="page home-page">
       <!-- Main Navbar-->
-      <header class="header">
+      <header class="header navbar-expand fixed-top">
         <nav class="navbar">
           <!-- Search Box-->
           <div class="search-box">
