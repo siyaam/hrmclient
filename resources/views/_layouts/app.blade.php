@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bootstrap Dashboard by Bootstrapious.com</title>
+    <title>SEASHELL</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -45,8 +45,8 @@
               <!-- Navbar Header-->
               <div class="navbar-header">
                 <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
-                  <div class="brand-text brand-big hidden-lg-down"><span>Bootstrap </span><strong>Dashboard</strong></div>
-                  <div class="brand-text brand-small"><strong>BD</strong></div></a>
+                  <div class="brand-text brand-big hidden-lg-down"><span>SEASHELL </span></div>
+                  <div class="brand-text brand-small"><strong>SEASHELL</strong></div></a>
                 <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
               </div>
               <!-- Navbar Menu -->
@@ -116,19 +116,19 @@
         <nav class="side-navbar">
           <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
-            <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="avatar"><img src="{{ asset('img/avatar-3.jpg') }}" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4">Mark Stephen</h1>
-              <p>Web Designer</p>
+              <h1 class="h5">Sweet Pumpkin</h1>
+              <p>HR Executive</p>
             </div>
           </div>
           <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
             <li class="active"> <a href="./"><i class="icon-home"></i>Home</a></li>
-            <li><a href="#dashvariants" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Staff </a>
+            <li><a href="#dashvariants" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>PIM </a>
               <ul id="dashvariants" class="collapse list-unstyled">
-                <li><a href="{{ url('Staff/') }}">Main</a></li>
-                <li><a href="{{ url('Staff/new') }}">New</a></li>
+                <li><a href="{{ url('Employee/') }}">Employee List</a></li>
+                <li><a href="{{ url('Employee/new') }}">New</a></li>
                 <li><a href="#">View</a></li>
                 <li><a href="#">Leave</a></li>
                 <li><a href="#">Page</a></li>
@@ -136,7 +136,7 @@
             </li>
             <li> <a href="tables.html"> <i class="icon-grid"></i>Tables </a></li>
             <li> <a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li>
-            <li> <a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li>
+            <li> <a href="{{ url('./forms') }}"> <i class="icon-padnote"></i>Forms </a></li>
             <li> <a href="login.html"> <i class="icon-interface-windows"></i>Login Page</a></li>
           </ul><span class="heading">Extras</span>
           <ul class="list-unstyled">
@@ -146,18 +146,7 @@
             <li> <a href="#"> <i class="icon-picture"></i>Demo </a></li>
           </ul>
         </nav>
-
-
-
-        <div class="content-inner">
-          <!-- Page Header-->
-          <header class="page-header">
-            <div class="container-fluid">
-              <h2 class="no-margin-bottom">Dashboard</h2>
-            </div>
-          </header>
-          <!-- Dashboard Counts Section-->
-
+        <!-- content display here -->
           @yield('content')
 
           <!-- Page Footer-->
@@ -165,10 +154,10 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-6">
-                  <p>Your company &copy; 2017-2019</p>
+                  <p class="text-small">SEASHELL &copy; 2017-2019</p>
                 </div>
                 <div class="col-sm-6 text-right">
-                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                  <p>Design by <a href="/" class="external">SEASHELL</a></p>
                   <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
                 </div>
               </div>

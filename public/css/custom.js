@@ -7,6 +7,20 @@ const {width, height, scale} = Dimensions.get("window"),
 
 export default StyleSheet.create({
     "body": {
-        "marginTop": 60
+        "marginTop": 60,
+        "fontSize": 0.8
+    },
+    "p": {
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "marginTop": 0,
+        "marginRight": 0,
+        "marginBottom": 0,
+        "marginLeft": 0
+    },
+    "emp-list-pic img": {
+        "width": "100% !important"
     }
 });

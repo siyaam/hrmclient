@@ -1,4 +1,7 @@
 /* your styles go here */
 body{
   margin-top: 60px;
+  font-size: 0.8rem;
 }
+p{padding: 0px; margin: 0;}
+.emp-list-pic img{width: 100% !important;}

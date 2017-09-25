@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Staff','Staff\StaffController@index')->name('Staff');
-Route::get('Staff/new','Staff\StaffController@newStaff')->name('Staff/new');
+Route::get('Employee','Employee\EmployeeController@index')->name('Employee');
+Route::get('Employee/new','Employee\EmployeeController@newEmployee')->name('Employee/new');
+Route::get('Employee/list', 'Employee\EmployeeController@listEmployee')->name('Employee/list');

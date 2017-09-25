@@ -2,6 +2,6 @@
 
 @section('content')
 
-<p>Hello World.</p>
+<p>ths is where attendance main will be displayed.</p>
 
 @endsection
