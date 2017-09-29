@@ -17,24 +17,16 @@
   </ul>
 <section class="tables">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="card">
-          <div class="card-header d-flex align-items-center">
-            <!-- <h3 class="h4">Basic Table</h3> -->
 
-          </div>
-            <div class="card-body">
-              sfdsfsfdsf
-            </div>
+
+      <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom:10px;">
+          <p><button type="button" class="btn btn-primary" data-toggle="collapse" href="#collapsAddEmployee" aria-expanded="false" aria-controls="collapsAddEmployee" ><i class="fa fa-plus" aria-hidden="true"></i> Add New Record</button></p>
         </div>
       </div>
-    </div>
-
-
-      <div class="row">
+      <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
         <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom:10px;">
-          <p><button type="button" class="btn btn-primary" data-toggle="collapse" href="#collapsAddEmployee" aria-expanded="false" aria-controls="collapsAddEmployee" >New Record</button></p>
+          <p><button type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#collapsAddEmployee" aria-expanded="false" aria-controls="collapsAddEmployee" ><i class="fa fa-plus" aria-hidden="true"></i> Add New Record</button></p>
         </div>
       </div>
       <div class="row">
@@ -139,339 +131,518 @@
                             <div class="form-group row">
                               <label for="photo" class="col-3 col-form-label">Photo Upload</label>
                                <div class="col-9">
-                                 <input type="file" name="photo" id="exampleInputFile">
-                                 <p class="help-block"><small>100px x 100px / .jpg, .png</small></p>
+                                 <input type="file" name="photo" id="emp-photo">
                                </div>
                             </div>
-
-                         <!-- </div> -->
                          <hr/>
-                         <div class="col-sm-4 col-md-4 col-sm-offset-8 col-md-offset-8" style="text-align:right;">
-                           <button class="btn btn-primary pull-right" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
-                         </div>
-                         <br/>
-                         <br/>
+                         <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                           <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                           <div class="col-md-3 col-lg-9 ml-lg-auto">
+                             <button class="btn btn-default" type="button" tabindex="13"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                             <button class="btn btn-primary " type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
+                           </div>
+                           <br/>
+                           <br/>
+                        </div>
+                        <!-- mobile btn -->
+                        <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
+                          <div class="col-sm-12 col-xs-12">
+                            <button class="btn btn-primary btn-block" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                            <button class="btn btn-default btn-block" type="button" tabindex="13"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                          </div>
+                        </div>
+                        <!-- mobile btn end -->
                        </div>
                          </form>
                        </div>
+                       <!-- address -->
                        <div role="tabpanel" class="tab-pane fade" id="address">
-                           <form class="">
-                               <div class="col-sm-12 col-md-12">
-                                 <h4 class="page-header">Address Informaion <small><a href="" data-toggle="tooltip" title="Fill all fields" ><i class="fa fa-info-circle" aria-hidden="true"></i></a></small></h4>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Current Address</label>
-                                   <input maxlength="100" name="address" required="required" class="form-control" placeholder="Current Address" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Postal Code</label>
-                                   <input maxlength="100" name="postal" required="" class="form-control" placeholder="Postal Code" type="text" tabindex="2">
-                                 </div>
-                               </div>
-                             <div class="col-sm-6 col-md-6">
-                             <div class="form-group">
-                               <label class="control-label">Street</label>
-                               <input maxlength="100" required="required" class="form-control" placeholder="Street" type="text" tabindex="3">
-                             </div>
-                             </div>
-                             <div class="col-sm-6 col-md-6">
-                             <div class="form-group">
-                               <label class="control-label">City</label>
-                               <input maxlength="100" name="city" required="required" class="form-control" placeholder="City" type="text" tabindex="4">
-                             </div>
-                             </div>
-                             <div class="col-sm-3 col-md-3">
-                               <div class="form-group">
-                                 <label class="control-label">Province</label>
-                                 <input maxlength="100" name="province" required="required" class="form-control" placeholder="Province" type="text" tabindex="5">
-                               </div>
-                             </div>
-                             <div class="col-sm-3 col-md-3">
-                               <div class="form-group">
-                                 <label class="control-label">State</label>
-                                 <input maxlength="100" name="state" required="required" class="form-control" placeholder="State" type="text" tabindex="5">
-                               </div>
-                             </div>
-                             <div class="col-sm-6 col-md-6">
-                               <div class="form-group">
-                                 <label class="control-label">Country</label>
-                                 <select class="form-control" name="country" tabindex="6">
-                                   <option>Maldives</option>
-                                   <option>Bangladesh</option>
-                                   <option>India</option>
-                                   <option>Sri Lanka</option>
-                                   <option>Philipines</option>
-                                   <option>Thailand</option>
-                                 </select>
+                         <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
+                           <!-- <h4 class="h5">Address Information </h4> -->
+                         </div>
+                         <form class="form-horizontal">
+                           <div class="form-group">
+
+
+                           <div class="form-group row">
+                             <label for="address1" class="col-3 col-form-label">Address Line 1 (current)</label>
+                              <div class="col-9">
+                                <input maxlength="100" name="address1" required="required" class="form-control" placeholder="Address Line 1" type="text" tabindex="1">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="address2" class="col-3 col-form-label">Address Line 2 (current)</label>
+                               <div class="col-9">
+                                 <input maxlength="100" name="address2" required="required" class="form-control" placeholder="Address Line 2" type="text" tabindex="2">
                                </div>
                              </div>
 
-                             <div class="col-sm-12 col-md-12">
-                               <div class="form-group">
-                                   <div class="checkbox">
-                                     <label>
-                                       <input type="checkbox"> Permanent address same as above!
-                                     </label>
+                             <div class="form-group row">
+                               <label for="ostal-Code" class="col-3 col-form-label">Postal Code</label>
+                                <div class="col-9">
+                                  <input maxlength="100" name="postalcode" required="required" class="form-control" placeholder="Postal Code" type="text" tabindex="3">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="Street" class="col-3 col-form-label">Street</label>
+                                 <div class="col-9">
+                                   <input maxlength="100" name="address" required="required" class="form-control" placeholder="Current Address" type="text" tabindex="4">
+                                 </div>
+                               </div>
+                               <div class="form-group row">
+                                 <label for="City" class="col-3 col-form-label">City</label>
+                                  <div class="col-9">
+                                    <input maxlength="100" name="city" required="required" class="form-control" placeholder="City" type="text" tabindex="5">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="state" class="col-3 col-form-label">State</label>
+                                   <div class="col-9">
+                                     <input maxlength="100" name="state" required="required" class="form-control" placeholder="State" type="text" tabindex="6">
                                    </div>
-                               </div>
-                             </div>
-                             <div class="col-sm-12 col-md-12">
-                               <hr/>
-                             </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Permanent Address</label>
-                                   <input maxlength="100" name="permanentaddress" required="required" class="form-control" placeholder="Permanent Address" type="text" tabindex="7">
                                  </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Postal Code</label>
-                                   <input maxlength="100" name="ppostal" required="" class="form-control" placeholder="Postal Code" type="text" tabindex="8">
+                                 <div class="form-group row">
+                                   <label for="province" class="col-3 col-form-label">Province</label>
+                                    <div class="col-9">
+                                      <input maxlength="100" name="address" required="required" class="form-control" placeholder="Province" type="text" tabindex="7">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                  <label for="Country" class="col-3 col-form-label">Country</label>
+                                  <div class="col-9">
+                                    <select class="form-control" name="nationality" tabindex="8">
+                                      <option>Maldives</option>
+                                      <option>Sri Lanka</option>
+                                      <option>Bangladesh</option>
+                                      <option>Thailand</option>
+                                    </select>
+                                   </div>
                                  </div>
+                                 <div class="form-group row">
+                                   <div class="col-sm-3 col-md-3"></div>
+                                   <div class="col-sm-9 col-md-9">
+                                     <div class="form-group">
+                                         <div class="checkbox">
+                                           <label class="form-check-label">
+                                             <input type="checkbox" class="form-check-input" tabindex="9"> Permanent address same as above!
+                                           </label>
+                                         </div>
+                                     </div>
+                                   </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <div class="col-sm-3 col-md-3">
+                                    <p class="bg-light">PERMANENT ADDRESS</p>
+                                  </div>
+                                  <div class="col-sm-9 col-md-9">
+
+                                  </div>
                                </div>
 
-                             <div class="col-sm-6 col-md-6">
-                             <div class="form-group">
-                               <label class="control-label">Street</label>
-                               <input maxlength="100" name="pstreet" required="required" class="form-control" placeholder="Street" type="text" tabindex="9">
-                             </div>
-                             </div>
-                             <div class="col-sm-6 col-md-6">
-                             <div class="form-group">
-                               <label class="control-label">City</label>
-                               <input maxlength="100" name="pcity" required="required" class="form-control" placeholder="City" type="text" tabindex="10">
-                             </div>
-                             </div>
-                             <div class="col-sm-3 col-md-3">
-                               <div class="form-group">
-                                 <label class="control-label">Province</label>
-                                 <input maxlength="100" name="province" required="required" class="form-control" placeholder="City" type="text" tabindex="11">
-                               </div>
-                             </div>
-                             <div class="col-sm-3 col-md-3">
-                             <div class="form-group">
-                               <label class="control-label">State</label>
-                               <input maxlength="100" name="state" required="required" class="form-control" placeholder="State" type="text" tabindex="11">
-                             </div>
-                             </div>
-                             <div class="col-sm-6 col-md-6">
-                               <div class="form-group">
-                                 <label class="control-label">Country</label>
-                                 <select class="form-control" name="country" tabindex="12">
-                                   <option>Maldives</option>
-                                   <option>Bangladesh</option>
-                                   <option>India</option>
-                                   <option>Sri Lanka</option>
-                                   <option>Philipines</option>
-                                   <option>Thailand</option>
-                                 </select>
-                               </div>
-                             </div>
-                             <div class="col-sm-12 col-md-12">
-                               <hr/>
-                             </div>
-                             <div class="col-sm-6 col-md-6 col-sm-offset-6 col-md-offset-6">
-                               <div class="col-sm-12 col-md-12 text-right">
-                                 <button class="btn btn-primary" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
-                               </div>
-                             </div>
+                                 <div class="form-group row">
+                                   <label for="address1" class="col-3 col-form-label">Address Line 1</label>
+                                    <div class="col-9">
+                                      <input maxlength="100" name="address1" required="required" class="form-control" placeholder="Address Line 1" type="text" tabindex="10">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="address2" class="col-3 col-form-label">Address Line 2</label>
+                                     <div class="col-9">
+                                       <input maxlength="100" name="address2" required="required" class="form-control" placeholder="Address Line 2" type="text" tabindex="11">
+                                     </div>
+                                   </div>
+
+                                   <div class="form-group row">
+                                     <label for="ostal-Code" class="col-3 col-form-label">Postal Code</label>
+                                      <div class="col-9">
+                                        <input maxlength="100" name="postalcode" required="required" class="form-control" placeholder="Postal Code" type="text" tabindex="12">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="Street" class="col-3 col-form-label">Street</label>
+                                       <div class="col-9">
+                                         <input maxlength="100" name="address" required="required" class="form-control" placeholder="Current Address" type="text" tabindex="13">
+                                       </div>
+                                     </div>
+                                     <div class="form-group row">
+                                       <label for="City" class="col-3 col-form-label">City</label>
+                                        <div class="col-9">
+                                          <input maxlength="100" name="city" required="required" class="form-control" placeholder="City" type="text" tabindex="14">
+                                        </div>
+                                      </div>
+                                      <div class="form-group row">
+                                        <label for="state" class="col-3 col-form-label">State</label>
+                                         <div class="col-9">
+                                           <input maxlength="100" name="state" required="required" class="form-control" placeholder="State" type="text" tabindex="15">
+                                         </div>
+                                       </div>
+                                       <div class="form-group row">
+                                         <label for="province" class="col-3 col-form-label">Province</label>
+                                          <div class="col-9">
+                                            <input maxlength="100" name="address" required="required" class="form-control" placeholder="Current Address" type="text" tabindex="16">
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        <label for="Country" class="col-3 col-form-label">Country</label>
+                                        <div class="col-9">
+                                          <select class="form-control" name="nationality" tabindex="17">
+                                            <option>Maldives</option>
+                                            <option>Sri Lanka</option>
+                                            <option>Bangladesh</option>
+                                            <option>Thailand</option>
+                                          </select>
+                                         </div>
+                                       </div>
+                         <hr/>
+                         <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                           <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                           <div class="col-md-3 col-lg-9 ml-lg-auto">
+                             <button class="btn btn-default" type="button" tabindex="18"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                             <button class="btn btn-primary " type="button" tabindex="19"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
+                           </div>
+                           <br/>
+                           <br/>
+                        </div>
+                        <!-- mobile btn -->
+                        <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
+                          <div class="col-sm-12 col-xs-12">
+                            <button class="btn btn-primary btn-block" type="button" tabindex="18"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                            <button class="btn btn-default btn-block" type="button" tabindex="19"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                          </div>
+                        </div>
+                        <!-- mobile btn end -->
+                       </div>
                          </form>
                        </div>
+                       <!-- end address -->
+
                        <div role="tabpanel" class="tab-pane" id="contact">
-                         <form>
+                         <!-- contact block -->
+                         <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
 
-                               <div class="col-sm-12 col-md-12">
-                                 <h4 class="page-header">Contact Informaion <small><a href="" data-toggle="tooltip" title="Fill all fields" ><i class="fa fa-info-circle" aria-hidden="true"></i></a></small></h4>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Phone #</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="Phone #" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Mobile (Office) #</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Mobile (Office) #" type="text" tabindex="2">
-                                 </div>
-                               </div>
+                         </div>
+                         <form class="form-horizontal">
+                           <div class="form-group">
 
 
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Phone (Home) #</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="Phone (Home) #" type="text" tabindex="1">
-                                 </div>
+                           <div class="form-group row">
+                             <label for="phonenumber" class="col-3 col-form-label">Phone Number </label>
+                              <div class="col-9">
+                                <input maxlength="100" name="phonenumber" required="required" class="form-control" placeholder="Phone Number" type="text" tabindex="1">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="mobilenumber" class="col-3 col-form-label">Mobile Number</label>
+                               <div class="col-9">
+                                 <input maxlength="100" name="mobilenumber" required="required" class="form-control" placeholder="Mobile Number" type="text" tabindex="2">
                                </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Mobile #</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Mobile #" type="text" tabindex="2">
-                                 </div>
-                               </div>
-
-
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">E-mail</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="E-mail" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Section E-mail</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Section E-mail" type="text" tabindex="2">
-                                 </div>
-                               </div>
-
-
-                             <div class="col-sm-12 col-md-12">
-                               <hr/>
-                             </div>
-                             <div class="col-sm-6 col-md-6 col-sm-offset-6 col-md-offset-6">
-                               <div class="col-sm-12 col-md-12 text-right">
-                                 <button class="btn btn-primary" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
-                             </div>
                              </div>
 
-                             </form>
+                             <div class="form-group row">
+                               <label for="orgemail" class="col-3 col-form-label">Email</label>
+                                <div class="col-9">
+                                  <input maxlength="100" name="orgemail" required="required" class="form-control" placeholder="Work Email" type="text" tabindex="3">
+                                </div>
+                              </div>
+
+                              <div class="form-group row">
+                                <label for="phonenumber" class="col-3 col-form-label">Personal Phone Number </label>
+                                 <div class="col-9">
+                                   <input maxlength="100" name="phonenumber" required="required" class="form-control" placeholder="Phone Number" type="text" tabindex="1">
+                                 </div>
+                               </div>
+                               <div class="form-group row">
+                                 <label for="mobilenumber" class="col-3 col-form-label">Personal Mobile Number</label>
+                                  <div class="col-9">
+                                    <input maxlength="100" name="mobilenumber" required="required" class="form-control" placeholder="Mobile Number" type="text" tabindex="2">
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label for="personalemail" class="col-3 col-form-label">Personal Email</label>
+                                   <div class="col-9">
+                                     <input maxlength="100" name="personalemail" required="required" class="form-control" placeholder="Work Email" type="text" tabindex="3">
+                                   </div>
+                                 </div>
+                                 <div class="form-group row">
+                                   <label for="orgemail" class="col-3 col-form-label">Twitter <small> <em>optional</em></small></label>
+                                    <div class="col-9">
+                                      <input maxlength="100" name="orgemail" required="required" class="form-control" placeholder="Work Email" type="text" tabindex="3">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="orgemail" class="col-3 col-form-label">Facebook <small> <em>optional</em></small></label>
+                                     <div class="col-9">
+                                       <input maxlength="100" name="orgemail" required="required" class="form-control" placeholder="Work Email" type="text" tabindex="3">
+                                     </div>
+                                   </div>
+
+                                   <div class="form-group row">
+                                     <label for="emergphonenumber" class="col-3 col-form-label">Emergency Phone Number </label>
+                                      <div class="col-9">
+                                        <input maxlength="100" name="emergphonenumber" required="required" class="form-control" placeholder="Emergency Number" type="text" tabindex="1">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="mobilenumber" class="col-3 col-form-label">Emergency Mobile Number</label>
+                                       <div class="col-9">
+                                         <input maxlength="100" name="mobilenumber" required="required" class="form-control" placeholder="Emergency Mobile Number" type="text" tabindex="2">
+                                       </div>
+                                     </div>
+
+                                     <div class="form-group row">
+                                       <label for="emergencyemail" class="col-3 col-form-label">Emergency Email</label>
+                                        <div class="col-9">
+                                          <input maxlength="100" name="emergencyemail" required="required" class="form-control" placeholder="Emergency Email" type="text" tabindex="3">
+                                        </div>
+                                      </div>
+
+
+
+
+                                     <hr/>
+                                     <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                                       <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                       <div class="col-md-3 col-lg-9 ml-lg-auto">
+                                         <button class="btn btn-default" type="button" tabindex="18"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                         <button class="btn btn-primary " type="button" tabindex="19"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
+                                       </div>
+                                       <br/>
+                                       <br/>
+                                    </div>
+                                    <!-- mobile btn -->
+                                    <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
+                                      <div class="col-sm-12 col-xs-12">
+                                        <button class="btn btn-primary btn-block" type="button" tabindex="18"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                                        <button class="btn btn-default btn-block" type="button" tabindex="19"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                      </div>
+                                    </div>
+                                    <!-- mobile btn end -->
+                                   </div>
+                              </form>
+                             <!-- contact block end -->
                            </div>
                            <div role="tabpanel" class="tab-pane" id="employment">
-
-                               <div class="col-sm-12 col-md-12">
-                                 <h4 class="page-header">Employment <small> <a href="" data-toggle="tooltip" title="Fill all fields" ><i class="fa fa-info-circle" aria-hidden="true"></i></a></small></h4>
-                               </div>
-                               <div class="col-sm-3 col-md-3">
-                                   <div class="form-group">
-                                     <label class="control-label">Post</label>
-                                     <select class="form-control" tabindex="1">
-                                       <option>Human Resource Officer</option>
-                                       <option>Sales Manager</option>
-                                       <option>Director General</option>
-                                       <option>Cleaner</option>
-                                       <option>Welder</option>
-                                       <option>Machine Operator</option>
-                                     </select>
+                              <!-- employement block -->
+                              <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
+                              </div>
+                              <form class="form-horizontal">
+                                <div class="form-group">
+                                <div class="form-group row">
+                                  <label for="desig" class="col-3 col-form-label">Designation </label>
+                                  <div class="col-9">
+                                    <select class="form-control" name="nationality" tabindex="1">
+                                      <option>Sales Exec.</option>
+                                      <option>IT Officer</option>
+                                      <option>Office Assistance</option>
+                                      <option>Receptionist</option>
+                                    </select>
                                    </div>
-                               </div>
-                               <div class="col-sm-3 col-md-">
-                                   <label class="control-label">Hire Date:</label>
-                                   <div class='input-group date' id='hiredate'>
-                                       <input type='text' class="form-control" tabindex="2" />
-                                       <span class="input-group-addon">
-                                           <span class="glyphicon glyphicon-calendar"></span>
-                                       </span>
+                                 </div>
+                                 <div class="form-group row">
+                                   <label for="desiglevel" class="col-3 col-form-label">Designation Level</label>
+                                    <div class="col-9">
+                                      <input maxlength="100" name="level" required="required" class="form-control" placeholder="Designation Level" type="text" tabindex="2">
+                                    </div>
+                                  </div>
+                                 <div class="form-group row">
+                                   <label for="hiredate" class="col-3 col-form-label">Hire Date</label>
+                                    <div class="col-9">
+                                      <div class='input-group date' id='startdate'>
+                                          <input type='text' class="form-control" tabindex="6" />
+                                          <span class="input-group-addon">
+                                              <span class="fa fa-calendar"></span>
+                                          </span>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                    <label for="orgemail" class="col-3 col-form-label">Basic Pay</label>
+                                     <div class="col-9">
+                                       <input maxlength="100" name="basicpay" required="required" class="form-control" placeholder="Salary" type="text" tabindex="4">
+                                     </div>
                                    </div>
-                                   <!-- refer: http://eonasdan.github.io/bootstrap-datetimepicker/Options/ -->
-                               </div>
-                               <div class="col-sm-3 col-md-">
-                                 <div class="form-group">
-                                   <label class="control-label">Basic Salary</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Basic Salary" type="text" tabindex="3">
-                                 </div>
-                               </div>
-                               <div class="col-sm-3 col-md-">
-                                 <div class="form-group">
-                                   <label class="control-label">Hire Type</label>
-                                   <select class="form-control" tabindex="6">
-                                     <option>Permanent</option>
-                                     <option>Temporary</option>
-                                     <option>Contracted</option><!-- if contracted onselect show start and end term-->
-                                   </select>
-                                 </div>
-                               </div>
+                                   <div class="form-group row">
+                                     <label for="experiencepay" class="col-3 col-form-label">Experience Allowance</label>
+                                      <div class="col-9">
+                                        <input maxlength="100" name="exallowance" required="required" class="form-control" placeholder="Experience Pay" type="text" tabindex="5">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="travel" class="col-3 col-form-label">Travel Allowance</label>
+                                       <div class="col-9">
+                                         <input maxlength="100" name="travel" required="required" class="form-control" placeholder="Travel Pay" type="text" tabindex="6">
+                                       </div>
+                                     </div>
+                                     <div class="form-group row">
+                                       <label for="foodpay" class="col-3 col-form-label">Food Allowance</label>
+                                        <div class="col-9">
+                                          <input maxlength="100" name="foodpay" required="required" class="form-control" placeholder="Food Pay" type="text" tabindex="7">
+                                        </div>
+                                      </div>
 
+                                   <div class="form-group row">
+                                     <label for="phoneallowance" class="col-3 col-form-label">Phone Allowance </label>
+                                      <div class="col-9">
+                                        <input maxlength="100" name="phoneallowance" required="required" class="form-control" placeholder="Phone Pay" type="text" tabindex="8">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label for="mobilenumber" class="col-3 col-form-label">Hire Type</label>
+                                       <div class="col-9">
+                                         <select class="form-control" tabindex="6">
+                                           <option>Permanent</option>
+                                           <option>Temporary</option>
+                                           <option>Contracted</option><!-- if contracted onselect show start and end term-->
+                                         </select>
+                                       </div>
+                                     </div>
 
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Previous</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="Enter First Name" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Mobile #</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Enter Last Name" type="text" tabindex="2">
-                                 </div>
-                               </div>
+                                     <div class="form-group row">
+                                       <label for="mobilenumber" class="col-3 col-form-label">Status</label>
+                                        <div class="col-9">
+                                          <select class="form-control" tabindex="6">
+                                            <option>Active</option>
+                                            <option>Terminated</option>
 
-
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">E-mail:</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="Enter First Name" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Section E-mail</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Enter Last Name" type="text" tabindex="2">
-                                 </div>
-                               </div>
-
-
-                             <div class="col-sm-12 col-md-12">
-                               <hr/>
-                             </div>
-                             <div class="col-sm-6 col-md-6 col-sm-offset-6 col-md-offset-6">
-                               <div class="col-sm-12 col-md-12 text-right">
-                               <button class="btn btn-primary" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
-                             </div>
-                             </div>
-
+                                          </select>
+                                        </div>
+                                      </div>
+                                          <hr/>
+                                          <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                                            <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                            <div class="col-md-3 col-lg-9 ml-lg-auto">
+                                              <button class="btn btn-default" type="button" tabindex="18"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                              <button class="btn btn-primary " type="button" tabindex="19"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
+                                            </div>
+                                            <br/>
+                                            <br/>
+                                         </div>
+                                         <!-- mobile btn -->
+                                         <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
+                                           <div class="col-sm-12 col-xs-12">
+                                             <button class="btn btn-primary btn-block" type="button" tabindex="18"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                                             <button class="btn btn-default btn-block" type="button" tabindex="19"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                           </div>
+                                         </div>
+                                         <!-- mobile btn end -->
+                                        </div>
+                                   </form>
+                             <!-- employement block end -->
                            </div><!-- tabpane end -->
                            <div role="tabpanel" class="tab-pane" id="qualification">
-
-                               <div class="col-sm-12 col-md-12">
-                                 <h4 class="page-header">Education / Qiualification <small> <a href="" data-toggle="tooltip" title="Fill all fields" ><i class="fa fa-info-circle" aria-hidden="true"></i></a></small></h4>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Education</label>
-                                   <input maxlength="100" required="required" class="form-control" placeholder="Education" type="text" tabindex="1">
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">School / College / University </label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="School / College / University" type="text" tabindex="2">
-                                 </div>
-                               </div>
-
-
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Edu. Level</label>
-                                   <select class="form-control" tabindex="6">
-                                     <option>High School</option>
-                                     <option>Certificate</option>
-                                     <option>Degree</option>
-                                     <option>Masters</option>
-                                     <option>Doctorate</option>
-                                     <option>Phd</option>
-                                   </select>
-                                 </div>
-                               </div>
-                               <div class="col-sm-6 col-md-6">
-                                 <div class="form-group">
-                                   <label class="control-label">Remarks / Documents</label>
-                                   <input maxlength="100" required="" class="form-control" placeholder="Remarks / Documents" type="text" tabindex="2">
-                                 </div>
-                               </div>
-
-
-                             <div class="col-sm-12 col-md-12">
-                               <hr/>
+                             <!-- qualification block -->
+                             <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
                              </div>
-                             <div class="col-sm-6 col-md-6 col-sm-offset-6 col-md-offset-6">
-                               <div class="col-sm-12 col-md-12 text-right">
-                               <button class="btn btn-primary" type="button" tabindex="13"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
-                             </div>
-                             </div>
+                             <form class="form-horizontal">
+                               <div class="form-group">
+                               <div class="form-group row">
+                                 <label for="education" class="col-3 col-form-label">Qualification / Education </label>
+                                 <div class="col-9">
+                                   <input maxlength="100" name="education" required="required" class="form-control" placeholder="Qualification" type="text" tabindex="2">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="desiglevel" class="col-3 col-form-label">University / College / School</label>
+                                   <div class="col-9">
+                                     <input maxlength="100" name="college" required="required" class="form-control" placeholder="University / College / School" type="text" tabindex="2">
+                                   </div>
+                                 </div>
+                                 <div class="form-group row">
+                                   <label for="lname" class="col-3 col-form-label">Started Date</label>
+                                    <div class="col-9">
+                                      <div class='input-group date' id='startdate'>
+                                          <input type='text' class="form-control" tabindex="6" />
+                                          <span class="input-group-addon">
+                                              <span class="fa fa-calendar"></span>
+                                          </span>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="lname" class="col-3 col-form-label">End Date</label>
+                                   <div class="col-9">
+                                     <div class='input-group date' id='startdate'>
+                                         <input type='text' class="form-control" tabindex="6" />
+                                         <span class="input-group-addon">
+                                             <span class="fa fa-calendar"></span>
+                                         </span>
+                                     </div>
+                                   </div>
+                               </div>
+                               <div class="form-group row">
+                               <label for="Country" class="col-3 col-form-label">Country</label>
+                               <div class="col-9">
+                                 <select class="form-control" name="nationality" tabindex="17">
+                                   <option>Maldives</option>
+                                   <option>Sri Lanka</option>
+                                   <option>Bangladesh</option>
+                                   <option>Thailand</option>
+                                 </select>
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label for="hiredate" class="col-3 col-form-label">Accredited</label>
+                                   <div class="col-9">
+                                     <select class="form-control" tabindex="6">
+                                       <option>Yes</option> <!-- if accredited then date -->
+                                       <option>No</option>
+
+                                     </select>
+                                   </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="hiredate" class="col-3 col-form-label">Certificate Level</label>
+                                      <div class="col-9">
+                                        <select class="form-control" tabindex="6">
+                                          <option>Level 1</option> <!-- if accredited then date -->
+                                          <option>Level 2</option>
+                                          <option>Level 3</option>
+                                          <option>Level 4</option>
+                                          <option>Level 5</option>
+                                        </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="certificate" class="col-3 col-form-label">Certificate</label>
+                                     <div class="col-9">
+                                       <input type="file" name="certificate" id="certificate">
+                                     </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="transcript" class="col-3 col-form-label">Transcripts</label>
+                                     <div class="col-9">
+                                       <input type="file" name="transcript" id="certificate">
+                                     </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="reference" class="col-3 col-form-label">Reference Documents</label>
+                                     <div class="col-9">
+                                       <input type="file" name="reference" id="certificate">
+                                     </div>
+                                  </div>
+                                 <hr/>
+                                 <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
+                                   <div class="col-sm-3 col-md-3 col-lg-3"></div>
+                                   <div class="col-md-3 col-lg-9 ml-lg-auto">
+                                     <button class="btn btn-default" type="button" tabindex="18"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                     <button class="btn btn-primary " type="button" tabindex="19"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save  </button>
+                                   </div>
+                                   <br/>
+                                   <br/>
+                                </div>
+                                <!-- mobile btn -->
+                                <div class="row d-lg-none d-md-none d-xs-block d-sm-block">
+                                  <div class="col-sm-12 col-xs-12">
+                                    <button class="btn btn-primary btn-block" type="button" tabindex="18"> <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+                                    <button class="btn btn-default btn-block" type="button" tabindex="19"> <i class="fa fa-times" aria-hidden="true"></i> Cancel  </button>
+                                  </div>
+                                </div>
+                                <!-- mobile btn end -->
+                               </div>
+                          </form>
 
                            </div><!-- tabpane end -->
                      </div><!-- tab content end -->
@@ -483,8 +654,8 @@
 
 
 
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
         </div>
       </div>
     <div class="row">
@@ -497,37 +668,105 @@
             </div>
           </div>
           <div class="card-header d-flex align-items-center">
-           <h5>Basic Table</h5>
+           <!-- <h5>Basic Table</h5> -->
           </div>
           <div class="card-body">
             <table class="table table-responsive">
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Designation</th>
+                  <th>Department</th>
+                  <th>Contact</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                  <th></th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>0101</td>
+                  <td>Mohamed Sultan</td>
+                  <td>Sales Officer</td>
+                  <td>Sales  Marketing</td>
+                  <td>879 8473</td>
+                  <td>assist@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
+                  <td>0102</td>
+                  <td>Noordeen Ali</td>
+                  <td>Sales Exec</td>
+                  <td>Sales & Marketing</td>
+                  <td>779 1173</td>
+                  <td>assist@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
+                  <td>0103</td>
+                  <td>Faisal Sattar</td>
+                  <td>Exective Officer</td>
+                  <td>Human Resources</td>
+                  <td>879 8473</td>
+                  <td>lifelife@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
                 </tr>
+                <tr>
+                  <th>4</th>
+                  <td>0104</td>
+                  <td>Ziyad Abdul Hakeem</td>
+                  <td>Administration</td>
+                  <td>Administration</td>
+                  <td>879 8473</td>
+                  <td>assist@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
+                </tr>
+                <tr>
+                  <!-- <th scope="row">11</th> -->
+                  <td>0101</td>
+                  <td>shuaib Hass Sultan</td>
+                  <td>Sales Officer</td>
+                  <td>Sales Marketing</td>
+                  <td>879 8473</td>
+                  <td>assist@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
+                </tr>
+                <tr>
+                  <!-- <th scope="row">14</th> -->
+                  <td>0101</td>
+                  <td>Ali Acram Mohamed</td>
+                  <td>mantenance Manager</td>
+                  <td>rester@rstart</td>
+                  <td>879 8473</td>
+                  <td>assist@sales.com</td>
+                  <td>Active</td>
+                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+
+                </tr>
+
+
               </tbody>
             </table>
           </div>
