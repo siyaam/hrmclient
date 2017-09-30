@@ -8,7 +8,7 @@ const {width, height, scale} = Dimensions.get("window"),
 export default StyleSheet.create({
     "body": {
         "marginTop": 60,
-        "fontSize": 0.8
+        "fontSize": 0.875
     },
     "p": {
         "paddingTop": 0,
@@ -22,5 +22,11 @@ export default StyleSheet.create({
     },
     "emp-list-pic img": {
         "width": "100% !important"
+    },
+    "table-responsive": {
+        "display": "table"
+    },
+    "table th": {
+        "borderTop": "none"
     }
 });

@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('Employee','Employee\EmployeeController@index')->name('Employee');
 Route::get('Employee/new','Employee\EmployeeController@newEmployee')->name('Employee/new');
 Route::get('Employee/list', 'Employee\EmployeeController@listEmployee')->name('Employee/list');
+Route::get('Organization', 'Organization\OrganizationController@Index')->name('Organization');
+Route::get('Country', 'CountryController@Country');
+Route::get('Location', 'LocationController@Location');

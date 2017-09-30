@@ -659,17 +659,17 @@
         </div>
       </div>
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-md-12 col-sm-12 col-lg-12">
         <div class="card">
-          <div class="card-close">
+          <!-- <div class="card-close">
             <div class="dropdown">
               <button type="button" id="closeCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
               <div aria-labelledby="closeCard" class="dropdown-menu has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
             </div>
           </div>
           <div class="card-header d-flex align-items-center">
-           <!-- <h5>Basic Table</h5> -->
-          </div>
+            <h4 class="h5">Empoyees <small>ALL</small></h4>
+          </div> -->
           <div class="card-body">
             <table class="table table-responsive">
               <thead>
@@ -696,7 +696,7 @@
                   <td>879 8473</td>
                   <td>assist@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
@@ -709,7 +709,7 @@
                   <td>779 1173</td>
                   <td>assist@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
@@ -722,7 +722,7 @@
                   <td>879 8473</td>
                   <td>lifelife@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
@@ -735,12 +735,12 @@
                   <td>879 8473</td>
                   <td>assist@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
                 <tr>
-                  <!-- <th scope="row">11</th> -->
+                  <th scope="row">11</th>
                   <td>0101</td>
                   <td>shuaib Hass Sultan</td>
                   <td>Sales Officer</td>
@@ -748,12 +748,12 @@
                   <td>879 8473</td>
                   <td>assist@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
                 <tr>
-                  <!-- <th scope="row">14</th> -->
+                  <th scope="row">14</th>
                   <td>0101</td>
                   <td>Ali Acram Mohamed</td>
                   <td>mantenance Manager</td>
@@ -761,7 +761,7 @@
                   <td>879 8473</td>
                   <td>assist@sales.com</td>
                   <td>Active</td>
-                  <<td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
@@ -769,118 +769,20 @@
 
               </tbody>
             </table>
+            <div class="col-sm-3 col-md-3">
+              <small>Total Employees:   <span class="badge badge-default">120 </span></small>
+            </div>
+            <div class="col-sm-3 col-md-3">
+            </div>
+            <div class="col-sm-3 col-md-3">
+            </div>
           </div>
+
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-close">
-            <div class="dropdown">
-              <button type="button" id="closeCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-              <div aria-labelledby="closeCard" class="dropdown-menu has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-            </div>
-          </div>
-          <div class="card-header d-flex align-items-center">
-            <h3 class="h4">Striped table with hover effect</h3>
-          </div>
-          <div class="card-body">
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter                            </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-close">
-            <div class="dropdown">
-              <button type="button" id="closeCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-              <div aria-labelledby="closeCard" class="dropdown-menu has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-            </div>
-          </div>
-          <div class="card-header d-flex align-items-center">
-            <h3 class="h4">Compact Table</h3>
-          </div>
-          <div class="card-body">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter      </td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter                                                                              </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+
+
     </div>
   </div>
 </section>

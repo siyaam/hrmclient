@@ -1,7 +1,10 @@
 /* your styles go here */
 body{
   margin-top: 60px;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+  /*font-family: 'Muli', sans-serif;*/
 }
 p{padding: 0px; margin: 0;}
 .emp-list-pic img{width: 100% !important;}
+.table-responsive { display: table; }
+.table th{border-top:none;}
