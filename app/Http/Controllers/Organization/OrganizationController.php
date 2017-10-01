@@ -12,4 +12,14 @@ class OrganizationController extends Controller
 
       return view('Organization.index');
     }
+
+    //designations
+    public function Designation(){
+      return view('Organization.Designation');
+    }
+    //address
+    public function Address(){
+      return view('Organization.Address');
+    }
+
 }

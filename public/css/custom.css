@@ -8,3 +8,31 @@ p{padding: 0px; margin: 0;}
 .emp-list-pic img{width: 100% !important;}
 .table-responsive { display: table; }
 .table th{border-top:none;}
+.top-bot{margin-top: 20px; margin-bottom: 20px;}
+/**button circle **/
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+/***end btn circle ***/
