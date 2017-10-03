@@ -22,4 +22,12 @@ class OrganizationController extends Controller
       return view('Organization.Address');
     }
 
+    public function Contact(){
+      return view('Organization.Contact');
+    }
+
+    public function City(){
+      return view('Organization.City');
+    }
+
 }

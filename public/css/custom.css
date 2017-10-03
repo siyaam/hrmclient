@@ -4,12 +4,14 @@ body{
   font-size: 0.875rem;
   /*font-family: 'Muli', sans-serif;*/
 }
-p{padding: 0px; margin: 0;}
+/*td img{width:100% !important;}*/
+td.avatar-sm img{width:30px; height: 30px;}
+/*p{padding: 0px; margin: 0;}*/
 .emp-list-pic img{width: 100% !important;}
 .table-responsive { display: table; }
 .table th{border-top:none;}
 .top-bot{margin-top: 20px; margin-bottom: 20px;}
-/**button circle **/
+/**add button circle **/
 .btn-circle {
   width: 30px;
   height: 30px;

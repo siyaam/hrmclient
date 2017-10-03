@@ -10,15 +10,9 @@ export default StyleSheet.create({
         "marginTop": 60,
         "fontSize": 0.875
     },
-    "p": {
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0
+    "tdavatar-sm img": {
+        "width": 30,
+        "height": 30
     },
     "emp-list-pic img": {
         "width": "100% !important"

@@ -33,45 +33,62 @@
         <div class="col">
           <div class="collapse multi-collapse" id="collapsAddNew">
             <div class="card card-body">
+
               <div class="row">
-                <div class="col-sm-12 col-md-12 top-bot">
-                      <h4 class="h5">Add Location </h4>
-                         <form class="">
+                <div class="col-sm-12 col-md-12">
+                  <!-- <div> -->
+
+                         <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
+                           <h4 class="h5">Add Contact Information </h4>
+                         </div>
+                         <form class="form-horizontal">
                            <div class="form-group">
-                           <div class="form-group row">
-                             <label for="name" class="col-3 col-form-label">Designation Name</label>
-                              <div class="col-9">
-                                <input maxlength="100" name="name" required="required" class="form-control" placeholder="Designation Name" type="text" tabindex="1">
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="name" class="col-3 col-form-label">Designation Pay</label>
-                               <div class="col-9">
-                                 <input maxlength="100" name="salary" required="required" class="form-control" placeholder="Designation Pay" type="text" tabindex="1">
-                               </div>
-                             </div>
-                            <div class="form-group row">
-                              <label for="address2" class="col-3 col-form-label">Designation For</label>
-                               <div class="col-9">
-                                 <input maxlength="100" name="organizationid" required="required" readonly="readonly" value="ABC Company Pvt. Ltd." class="form-control" placeholder="designationfor" type="text" tabindex="1">
-                               </div>
-                             </div>
-
                              <div class="form-group row">
-                             <label class="col-3 col-form-label">Designation Level</label>
-                             <div class="col-9">
-                               <select class="form-control" name="country" tabindex="6">
-                                 <option>1</option>
-                                 <option>2</option>
-                                 <option>3</option>
-                                 <option>4</option>
-                                 <option>5</option>
-                                 <option>6</option>
-                               </select>
+                               <label for="employee" class="col-3 col-form-label">Employee</label>
+                                <div class="col-9">
+                                  <input maxlength="100" name="employid" required="required" readonly="" class="form-control" placeholder="Employee ID" type="text" tabindex="1">
+                                </div>
                               </div>
-                            </div>
+                              <!-- employee address is automatically filled -->
+                              <div class="form-group row">
+                                <label for="employee" class="col-3 col-form-label">Employee Address</label>
+                                 <div class="col-9">
+                                   <!-- <input maxlength="100" name="employid" required="required" readonly="" class="form-control" placeholder="Employee ID" type="text" tabindex="1"> -->
+                                   H. Five Star Logde, Kaaru Magu, 20331,
+                                   Male' Maldives
+                                 </div>
+                               </div>
+                            <div class="form-group row">
+                              <label for="phone" class="col-3 col-form-label">Phone Number</label>
+                               <div class="col-9">
+                                 <input maxlength="100" name="phone" required="required" class="form-control" placeholder="phone" type="text" tabindex="1">
+                               </div>
+                             </div>
+                             <div class="form-group row">
+                               <label for="mobile" class="col-3 col-form-label">Mobile Number</label>
+                                <div class="col-9">
+                                  <input maxlength="100" name="mobile" required="required" class="form-control" placeholder="Mobile Number" type="text" tabindex="1">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="email" class="col-3 col-form-label">Email</label>
+                                 <div class="col-9">
+                                   <input maxlength="100" name="email" required="required" class="form-control" placeholder="Postal Code" type="text" tabindex="1">
+                                 </div>
+                               </div>
 
+                                <div class="form-group row">
+                                <label class="col-3 col-form-label">Contact Type</label>
+                                <div class="col-9">
+                                  <select class="form-control" name="country" tabindex="6">
+                                    <option>Office</option>
+                                    <option>Home</option>
+                                    <option>Personal</option>
+                                    <option>Emergency</option>
 
+                                  </select>
+                                 </div>
+                               </div>
                              <div class="form-group row">
                              <label class="col-3 col-form-label">Status</label>
                              <div class="col-9">
@@ -103,9 +120,17 @@
                         </div>
                         <!-- mobile btn end -->
                        </div>
-                    </form>
+                         </form>
+
                 </div>
               </div>
+
+
+
+
+
+            <!-- </div>
+          </div> -->
         </div>
       </div>
     <div class="row">
@@ -116,11 +141,10 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Name</th>
-                  <th>Salary</th>
-                  <th>Level</th>
-                  <th>Created Date</th>
-                  <th>Created User</th>
+                  <th>Phone Number</th>
+                  <th>Mobile Number</th>
+                  <th>Email</th>
+                  <th>Contact Type</th>
                   <th>Status</th>
                   <th></th>
                   <th></th>
@@ -129,11 +153,10 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Sales & Marketing Manager</td>
-                  <td>12933.00</td>
-                  <td>2</td>
-                  <td>12.09.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Cristine Felonali (69)</a></td>
+                  <td>333 4341</td>
+                  <td>7864838</td>
+                  <td>twin@twin.com</td>
+                  <td>Office</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
@@ -141,37 +164,51 @@
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Sales & Marketing Assistance</td>
-                  <td>122933.00</td>
-                  <td>2</td>
-                  <td>12.09.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Marinda Manilane (48)</a></td>
+                  <td>323 3434</td>
+                  <td>999 4343</td>
+                  <td>tommy@tommy.com</td>
+                  <td>Home</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
-
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Accounting Officer</td>
-                  <td>12933.00</td>
-                  <td>2</td>
-                  <td>22.08.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Sousona Sisse Al (13)</a></td>
+                  <td>323 3434</td>
+                  <td>999 4343</td>
+                  <td>caroline@tommy.com</td>
+                  <td>personal</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
-
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Operation Executive</td>
-                  <td>10933.00</td>
-                  <td>2</td>
-                  <td>9.05.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Aishath Manilia (78)</a></td>
-
-                  <td><span  class="badge badge-warning"> In Active </span</td>
+                  <td>323 3434</td>
+                  <td>999 4343</td>
+                  <td>ian@tommy.com</td>
+                  <td>Emergency</td>
+                  <td>Active</td>
+                  <td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>323 3434</td>
+                  <td>999 4343</td>
+                  <td>tommy@tommy.com</td>
+                  <td>Home</td>
+                  <td>Active</td>
+                  <td><i class="fa fa-times"></i> </td>
+                  <td><i class="fa fa-pencil-square-o"></i> </td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>323 3434</td>
+                  <td>999 4343</td>
+                  <td>tommy@tommy.com</td>
+                  <td>Home</td>
+                  <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
@@ -180,7 +217,7 @@
               </tbody>
             </table>
             <div class="col-sm-3 col-md-3">
-              <small>Total Active Designation:   <span class="badge badge-default">27 </span></small>
+              <small>Contacts:   <span class="badge badge-default">7 </span></small>
             </div>
             <div class="col-sm-3 col-md-3">
             </div>
@@ -194,37 +231,6 @@
 
 
     </div>
-
-
-    <!-- The modal -->
-<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-          <h4 class="modal-title" id="modalLabel">Flip-flop</h4>
-        </div> -->
-        <div class="modal-body bg-primary text-white text-center" style="height:90%;">
-        <img src="{{ asset('img/avatar-3.jpg/30') }}" alt="..." class="img-fluid rounded-circle">
-        <h5 class="top-bot">Ms. Shina Mina Caroline</h5>
-        <p>Director, Human Resource Management</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
   </div>
 </section>
 
