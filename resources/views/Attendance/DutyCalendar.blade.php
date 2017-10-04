@@ -3,18 +3,17 @@
 @section('content')
 <div class="content-inner">
   <!-- Page Header-->
-  <header class="page-header">
-    <div class="container-fluid">
-      <h2 class="no-margin-bottom">Tables</h2>
-    </div>
-  </header>
-  <!-- Breadcrumb-->
-  <ul class="breadcrumb">
-    <div class="container-fluid">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active">Tables</li>
-    </div>
-  </ul>
+  <!-- <header class="page-header"> -->
+
+      <ul class="breadcrumb">
+        <div class="container-fluid">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active"><a href="">Admin</a></li>
+          <li class="breadcrumb-item active"><a href="">Duty Calendar</a></li>
+        </div>
+      </ul>
+  <!-- </header> -->
+
 <section class="tables">
   <div class="container-fluid">
 
@@ -39,39 +38,33 @@
                   <!-- <div> -->
 
                          <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
-                           <h4 class="h5">Add Attendance Type </h4>
+                           <h4 class="h5">Add Duty Calendar </h4>
                          </div>
                          <form class="form-horizontal">
                            <div class="form-group">
                              <div class="form-group row">
-                               <label for="type" class="col-3 col-form-label">Attendance Type</label>
+                               <label for="employee" class="col-3 col-form-label">Employee</label>
                                 <div class="col-9">
-                                  <input maxlength="100" name="type" required="required" class="form-control" placeholder="Attendance Type" type="text" tabindex="1">
+                                  <input maxlength="100" name="employee" readonly="readonly" required="required" class="form-control" placeholder="employee" type="text" tabindex="1">
                                 </div>
                               </div>
                               <div class="form-group row">
-                                <label for="desc" class="col-3 col-form-label">Description</label>
-                                 <div class="col-9">
-                                   <input maxlength="100" name="desc" required="required" class="form-control" placeholder="Description" type="text" tabindex="2">
-                                 </div>
+                              <label class="col-3 col-form-label">Department Shift</label>
+                              <div class="col-9">
+                                <select class="form-control" name="country" tabindex="3">
+                                  <option name="shift">Airport Shift 2</option>
+                                  <option>Sales Shift 1</option>
+                                  <option>Operations Shift 3</option>
+
+                                </select>
                                </div>
+                             </div>
                                <div class="form-group row">
-                                 <label for="ref" class="col-3 col-form-label">Reference Number</label>
+                                 <label for="date" class="col-3 col-form-label">Calendar Date</label>
                                   <div class="col-9">
-                                    <input maxlength="100" name="ref" required="required" class="form-control" placeholder="Reference #" type="text" tabindex="3">
+                                    <input maxlength="100" name="date" required="required" class="form-control" placeholder="Date" type="text" tabindex="3">
                                   </div>
                                 </div>
-                                <div class="form-group row">
-                                <label class="col-3 col-form-label">Status</label>
-                                <div class="col-9">
-                                  <div class="form-check">
-                                   <label class="form-check-label">
-                                     <input type="checkbox" class="form-check-input">
-                                     Active
-                                   </label>
-                                 </div>
-                                 </div>
-                               </div>
 
                          <hr/>
                          <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">

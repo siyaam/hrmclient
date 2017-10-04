@@ -39,39 +39,59 @@
                   <!-- <div> -->
 
                          <div class="col-sm-12 col-md-12" style="margin-top:40px; margin-bottom:4px;">
-                           <h4 class="h5">Add Attendance Type </h4>
+                           <h4 class="h5">Add Noticebaord </h4>
                          </div>
                          <form class="form-horizontal">
                            <div class="form-group">
+                           <div class="form-group row">
+                             <label for="title" class="col-3 col-form-label">Title</label>
+                              <div class="col-9">
+                                <input maxlength="100" name="name" required="required" class="form-control" placeholder="Name" type="text" tabindex="1">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="desc" class="col-3 col-form-label">Description</label>
+                               <div class="col-9">
+                                  <textarea class="form-control" id="desc" rows="2" tabindex="2"></textarea>
+                                </div>
+                             </div>
                              <div class="form-group row">
-                               <label for="type" class="col-3 col-form-label">Attendance Type</label>
+                             <label class="col-3 col-form-label">Department</label>
+                             <div class="col-9">
+                               <select class="form-control" name="country" tabindex="3">
+                                 <option>Sales & Marketing</option>
+                                 <option>Operations</option>
+                                 <option>Human Resource</option>
+                                 <option>Accounting</option>
+
+                               </select>
+                              </div>
+                            </div>
+                             <div class="form-group row">
+                               <label for="date" class="col-3 col-form-label">Expire Date</label>
                                 <div class="col-9">
-                                  <input maxlength="100" name="type" required="required" class="form-control" placeholder="Attendance Type" type="text" tabindex="1">
+                                  <input maxlength="100" name="date" required="required" class="form-control" placeholder="Expire Date" type="text" tabindex="4">
                                 </div>
                               </div>
                               <div class="form-group row">
-                                <label for="desc" class="col-3 col-form-label">Description</label>
+                                <label for="created" class="col-3 col-form-label">Created By</label>
                                  <div class="col-9">
-                                   <input maxlength="100" name="desc" required="required" class="form-control" placeholder="Description" type="text" tabindex="2">
+                                   <input maxlength="100" name="created" required="required" class="form-control" placeholder="Created" type="text" tabindex="5">
                                  </div>
                                </div>
-                               <div class="form-group row">
-                                 <label for="ref" class="col-3 col-form-label">Reference Number</label>
-                                  <div class="col-9">
-                                    <input maxlength="100" name="ref" required="required" class="form-control" placeholder="Reference #" type="text" tabindex="3">
-                                  </div>
-                                </div>
-                                <div class="form-group row">
-                                <label class="col-3 col-form-label">Status</label>
-                                <div class="col-9">
-                                  <div class="form-check">
-                                   <label class="form-check-label">
-                                     <input type="checkbox" class="form-check-input">
-                                     Active
-                                   </label>
-                                 </div>
-                                 </div>
-                               </div>
+
+
+                             <div class="form-group row">
+                             <label class="col-3 col-form-label">Status</label>
+                             <div class="col-9">
+                               <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input">
+                                  Active
+                                </label>
+                              </div>
+                              </div>
+                            </div>
 
                          <hr/>
                          <div class="row d-none d-xs-none d-sm-none d-md-block d-lg-block">
@@ -92,7 +112,7 @@
                         </div>
                         <!-- mobile btn end -->
                        </div>
-                    </form>
+                         </form>
 
                 </div>
               </div>
@@ -113,10 +133,10 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Type</th>
+                  <th>Title</th>
                   <th>Description</th>
-                  <th>Reference</th>
-                  <th>Date</th>
+                  <th>Expire Date</th>
+                  <th>Unit</th>
                   <th>Status</th>
                   <th></th>
                   <th></th>
@@ -125,92 +145,59 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>National Day</td>
-                  <td>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  </td>
-                  <td><a href="">AB12/2011</a></td>
-                  <td>01.09.2001</td>
-                  <td><span  class="badge badge-warning"> In Active </span></td>
+                  <td>Intall MS Office to all PCs</td>
+                  <td>Upgrading productivity among organization staff</td>
+                  <td>09.08.2011</td>
+                  <td>Information Technology</td>
+                  <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Ramadan</td>
-                  <td>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  </td>
-                  <td><a href="">C02/2000</a></td>
-                  <td>01.09.2001</td>
-                  <td>Active</td>
+                  <td>Email Setup</td>
+                  <td>Email setup for new employee</td>
+                  <td>09.08.2017</td>
+                  <td>Information Technology</td>
+                  <td><span  class="badge badge-danger">Expired</span></td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Work</td>
-                  <td>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                    </p>
-                  </td>
-                  <td><a href="">D2/2017</a></td>
-                  <td>01.09.2001</td>
-                  <td>Active</td>
+                  <td>Register new vehicle</td>
+                  <td>New vehicle registration</td>
+                  <td>09.09.2017</td>
+                  <td>Operations</td>
+                  <td><span  class="badge badge-warning">Active</span></td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Work</td>
-                  <td>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                      Lorem ipsum dolor sit amet,
-                    </p>
-                  </td>
-                  <td><a href="">D2/2017</a></td>
-                  <td>01.09.2001</td>
-                  <td><span  class="badge badge-warning"> In Active </span></td>
+                  <td>Make sales order</td>
+                  <td>making a new sales order new office furniture</td>
+                  <td>09.08.2011</td>
+                  <td>Operations</td>
+                  <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td>Family Responsibility</td>
-                  <td>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </td>
-                  <td><a href="">E4/2005</a></td>
-                  <td>01.09.2001</td>
-                  <td>Active </td>
-                  <td><i class="fa fa-times"></i> </td>
-                  <td><i class="fa fa-pencil-square-o"></i> </td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>Work</td>
-                  <td>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                      Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                  </td>
-                  <td><a href="">D2/2017</a></td>
-                  <td>11.03.2000</td>
+                  <td>Transfer employee</td>
+                  <td>Transfering employees as per organization regulation</td>
+                  <td>23.12.2017</td>
+                  <td>Human Resource</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
                 </tr>
-
+                
               </tbody>
             </table>
             <div class="col-sm-3 col-md-3">
-              <small>Contacts:   <span class="badge badge-default">7 </span></small>
+              <small>Organization Branches:   <span class="badge badge-default">7 </span></small>
             </div>
             <div class="col-sm-3 col-md-3">
             </div>

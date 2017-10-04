@@ -27,6 +27,8 @@ Route::get('Organization/City', 'Organization\OrganizationController@City')->nam
 /** Attendance **/
 Route::get('Attendance/Shift', 'Attendance\ShiftController@Shift')->name('Attendance/Shift');
 Route::get('Attendance/Type', 'Attendance\AttendanceTypeController@Type')->name('Attendance/Type');
+Route::get('Attendance/DutyCalendar', 'Attendance\DutyCalendarController@DutyCalendar')->name('Attendance/DutyCalendar');
 
+Route::get('NoticeBoard', 'NoticeBoardController@NoticeBoard');
 Route::get('Country', 'CountryController@Country');
 Route::get('Location', 'LocationController@Location');

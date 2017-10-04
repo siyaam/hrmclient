@@ -11,6 +11,17 @@ td.avatar-sm img{width:30px; height: 30px;}
 .table-responsive { display: table; }
 .table th{border-top:none;}
 .top-bot{margin-top: 20px; margin-bottom: 20px;}
+/*--------------------------------------------*/
+/***profile modal******************************/
+/*--------------------------------------------*/
+.profile-modal {width: 100%;padding: 30px;margin-bottom: 10px;}
+/*.profile-modal .image{width: 100px;height: 100px;text-align: center;}*/
+/*.profile-modal .image img{width: 60%;height: 60%;}*/
+.profile-modal .avatar-sm img{width: 60%;height: 60%;}
+.profile-info .name{font-size: 1.2rem;padding: 2px;}
+.profile-info .post{font-size: 0.8rem; color: #ccc;padding: 2px;}
+.profile-info p{font-size: 0.7rem; color: #ddd;}
+/****end profile-modal*************************/
 /**add button circle **/
 .btn-circle {
   width: 30px;

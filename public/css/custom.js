@@ -27,6 +27,37 @@ export default StyleSheet.create({
         "marginTop": 20,
         "marginBottom": 20
     },
+    "profile-modal": {
+        "width": "100%",
+        "paddingTop": 30,
+        "paddingRight": 30,
+        "paddingBottom": 30,
+        "paddingLeft": 30,
+        "marginBottom": 10
+    },
+    "profile-modal avatar-sm img": {
+        "width": "60%",
+        "height": "60%"
+    },
+    "profile-info name": {
+        "fontSize": 1.2,
+        "paddingTop": 2,
+        "paddingRight": 2,
+        "paddingBottom": 2,
+        "paddingLeft": 2
+    },
+    "profile-info post": {
+        "fontSize": 0.8,
+        "color": "#ccc",
+        "paddingTop": 2,
+        "paddingRight": 2,
+        "paddingBottom": 2,
+        "paddingLeft": 2
+    },
+    "profile-info p": {
+        "fontSize": 0.7,
+        "color": "#ddd"
+    },
     "btn-circle": {
         "width": 30,
         "height": 30,

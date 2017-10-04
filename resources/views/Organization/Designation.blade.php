@@ -198,19 +198,53 @@
 
     <!-- The modal -->
 <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-        </button>
-          <h4 class="modal-title" id="modalLabel">Flip-flop</h4>
-        </div> -->
-        <div class="modal-body bg-primary text-white text-center" style="height:90%;">
+  <div class="modal-dialog modal-sm " role="document">
+      <div class="modal-content text-center">
+
+        		<div class="col-sm-12 col-md-12">
+
+                    <!-- <div class="card hovercard"> -->
+                    <div class="row">
+                      <div class="col-sm-12 profile-modal bg-primary">
+                        <div class="avatar-sm">
+                              <img src="{{ asset('img/avatar-3.jpg') }}" alt="..." class="img-fluid rounded-circle">
+                        </div>
+                      </div>
+                    </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <a target="_blank" href="">Eden Sophie Mann</a>
+                            </div>
+                            <div class="post">Passionate designer</div>
+                            <div class="post">Curious developer</div>
+                            <div class="post">Tech geek</div>
+                        </div>
+                        <div class="bottom">
+                            <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" rel="publisher"
+                               href="https://plus.google.com/+ahmshahnuralam">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a class="btn btn-primary btn-sm" rel="publisher"
+                               href="https://plus.google.com/shahnuralam">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                                <i class="fa fa-behance"></i>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+        	</div>
+<!--/.Card-->
+
+
+        <!-- <div class="modal-body bg-primary text-white text-center" style="height:90%;">
         <img src="{{ asset('img/avatar-3.jpg/30') }}" alt="..." class="img-fluid rounded-circle">
         <h5 class="top-bot">Ms. Shina Mina Caroline</h5>
         <p>Director, Human Resource Management</p>
-        </div>
+        </div> -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
