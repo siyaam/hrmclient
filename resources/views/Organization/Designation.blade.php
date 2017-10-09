@@ -29,6 +29,20 @@
           <p><button type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#collapseAddNew" aria-expanded="false" aria-controls="collapsAddNew" ><i class="fa fa-plus" aria-hidden="true"></i> Add New Record</button></p>
         </div>
       </div>
+      <div class="btn-toolbar justify-content-between" style="margin-bottom:1rem;" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-round btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <input type="text" style="margin-left:8px;" class="form-control" placeholder="Search" aria-label="toolbar-btn" aria-describedby="btnGroupAddon">
+        </div>
+        <div class="btn-group" role="group" aria-label="ActionBtn" style="border-radius:24px;">
+          <button type="button" class="btn btn-round btn-secondary" ><i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-th" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-list" aria-hidden="true"></i>
+            <button type="button" class="btn btn-round btn-secondary"><i class="fa fa-gear" aria-hidden="true"></i>
+      </button>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
           <div class="collapse multi-collapse" id="collapsAddNew">
@@ -114,7 +128,7 @@
           <div class="card-body">
             <table class="table table-responsive">
               <thead>
-                <tr>
+                <tr class="bg-cyan">
                   <th>#</th>
                   <th>Name</th>
                   <th>Salary</th>
@@ -133,7 +147,7 @@
                   <td>12933.00</td>
                   <td>2</td>
                   <td>12.09.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Cristine Felonali (69)</a></td>
+                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Cristine Felonali (69)</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
@@ -145,7 +159,7 @@
                   <td>122933.00</td>
                   <td>2</td>
                   <td>12.09.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Marinda Manilane (48)</a></td>
+                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Marinda Manilane (48)</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
@@ -157,7 +171,7 @@
                   <td>12933.00</td>
                   <td>2</td>
                   <td>22.08.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Sousona Sisse Al (13)</a></td>
+                   <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Sousona Sisse Al (13)</a></td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
@@ -169,7 +183,7 @@
                   <td>10933.00</td>
                   <td>2</td>
                   <td>9.05.2015</td>
-                  <td class="avatar-sm"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> <a href="" data-toggle="modal" data-target="#flipFlop"> Aishath Manilia (78)</a></td>
+                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Aishath Manilia (78)</td>
 
                   <td><span  class="badge badge-warning"> In Active </span</td>
                   <td><i class="fa fa-times"></i> </td>
@@ -190,71 +204,42 @@
 
         </div>
       </div>
-
-
-
     </div>
 
 
-    <!-- The modal -->
-<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm " role="document">
-      <div class="modal-content text-center">
-
-        		<div class="col-sm-12 col-md-12">
-
-                    <!-- <div class="card hovercard"> -->
-                    <div class="row">
-                      <div class="col-sm-12 profile-modal bg-primary">
-                        <div class="avatar-sm">
-                              <img src="{{ asset('img/avatar-3.jpg') }}" alt="..." class="img-fluid rounded-circle">
-                        </div>
-                      </div>
-                    </div>
-                        <div class="profile-info">
-                            <div class="name">
-                                <a target="_blank" href="">Eden Sophie Mann</a>
-                            </div>
-                            <div class="post">Passionate designer</div>
-                            <div class="post">Curious developer</div>
-                            <div class="post">Tech geek</div>
-                        </div>
-                        <div class="bottom">
-                            <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-danger btn-sm" rel="publisher"
-                               href="https://plus.google.com/+ahmshahnuralam">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <a class="btn btn-primary btn-sm" rel="publisher"
-                               href="https://plus.google.com/shahnuralam">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
-                                <i class="fa fa-behance"></i>
-                            </a>
-                        </div>
-                    <!-- </div> -->
-        	</div>
-<!--/.Card-->
-
-
-        <!-- <div class="modal-body bg-primary text-white text-center" style="height:90%;">
-        <img src="{{ asset('img/avatar-3.jpg/30') }}" alt="..." class="img-fluid rounded-circle">
-        <h5 class="top-bot">Ms. Shina Mina Caroline</h5>
-        <p>Director, Human Resource Management</p>
-        </div> -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- The profile modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile-modal">
+  Launch demo modal
+</button> -->
+    <div class="modal modal-sm fade" id="profile-modal" tabindex="-1" role="dialog" aria-labelledby="profile-modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-profile">
+                  <div class="top-section">
+                    <div class="modal-profile-close-btn">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>
+              <div class="avatar">
+                <img src="http://lorempixel.com/80/80/" />
+              </div>
+              <div class="bottom-section">
+                <h4>Ms Devine Sophian</h4>
+                <p>
+                values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties,
+                </p>
+              </div>
+            <div class="social-media">
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+           </div>
+          </div>
         </div>
-
-
-
-
       </div>
-  </div>
-</div>
+    </div>
 
 
 

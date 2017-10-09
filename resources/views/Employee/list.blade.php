@@ -649,27 +649,47 @@
 
                 </div>
               </div>
-
-
-
-
-
-            <!-- </div>
-          </div> -->
         </div>
       </div>
+
     <div class="row">
-      <div class="col-md-12 col-sm-12 col-lg-12">
-        <div class="card">
-          <!-- <div class="card-close">
-            <div class="dropdown">
-              <button type="button" id="closeCard" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-              <div aria-labelledby="closeCard" class="dropdown-menu has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+      <div class="col">
+        <div class="dt-toolbar">
+          <div class="col-sm-6 col-md-6 col-xs-12">
+            <div class="dataTables_filter">
+              <label>
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                </label>
+                <input class="form-control" name="search" type="text">
+
             </div>
+            sfsdf
           </div>
-          <div class="card-header d-flex align-items-center">
-            <h4 class="h5">Empoyees <small>ALL</small></h4>
-          </div> -->
+          <div class="col-sm-6 col-md-6 col-xs-12">
+            <div class="dataTables_filter">
+              <label>
+
+                </label>
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input class="form-control" name="search" type="text">
+
+            </div>
+            <!-- <div class="col-auto"> -->
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <div class="input-group-addon">@</div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    <!-- </div> -->
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-lg-12">
+
+        <div class="card">
           <div class="card-body">
             <table class="table table-responsive">
               <thead>
