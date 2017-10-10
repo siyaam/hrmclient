@@ -29,20 +29,43 @@
           <p><button type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#collapseAddNew" aria-expanded="false" aria-controls="collapsAddNew" ><i class="fa fa-plus" aria-hidden="true"></i> Add New Record</button></p>
         </div>
       </div>
+
+
+
+
       <div class="btn-toolbar justify-content-between" style="margin-bottom:1rem;" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group" role="group" aria-label="First group">
+
           <button type="button" class="btn btn-round btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></button>
-          <input type="text" style="margin-left:8px;" class="form-control" placeholder="Search" aria-label="toolbar-btn" aria-describedby="btnGroupAddon">
+          <input type="text"  class="form-control" placeholder="Search" aria-label="toolbar-btn" aria-describedby="btnGroupAddon">
         </div>
         <div class="btn-group" role="group" aria-label="ActionBtn" style="border-radius:24px;">
           <button type="button" class="btn btn-round btn-secondary" ><i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
           <button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
           <button type="button" class="btn btn-secondary"><i class="fa fa-th" aria-hidden="true"></i></button>
-          <button type="button" class="btn btn-secondary"><i class="fa fa-list" aria-hidden="true"></i>
-            <button type="button" class="btn btn-round btn-secondary"><i class="fa fa-gear" aria-hidden="true"></i>
-      </button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-list" aria-hidden="true"></i></button>
+            <!-- <button type="button" class="btn btn-round btn-secondary"> -->
+
+
+
+
+            <div class="dropdown btn-group">
+              <button class="btn btn-round btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-gear" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
         </div>
       </div>
+
+
+
+
+
       <div class="row">
         <div class="col">
           <div class="collapse multi-collapse" id="collapsAddNew">
@@ -74,7 +97,7 @@
                              <div class="form-group row">
                              <label class="col-3 col-form-label">Designation Level</label>
                              <div class="col-9">
-                               <select class="form-control" name="country" tabindex="6">
+                               <select class="form-control btn-select-input" name="country" tabindex="6">
                                  <option>1</option>
                                  <option>2</option>
                                  <option>3</option>

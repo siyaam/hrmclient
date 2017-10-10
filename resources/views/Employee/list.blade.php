@@ -29,6 +29,32 @@
           <p><button type="button" class="btn btn-primary btn-block" data-toggle="collapse" href="#collapsAddEmployee" aria-expanded="false" aria-controls="collapsAddEmployee" ><i class="fa fa-plus" aria-hidden="true"></i> Add New Record</button></p>
         </div>
       </div>
+      <div class="btn-toolbar justify-content-between" style="margin-bottom:1rem;" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-round btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <input type="text" style="margin-left:8px;" class="form-control btn-round" placeholder="Search" aria-label="toolbar-btn" aria-describedby="btnGroupAddon">
+        </div>
+        <div class="btn-group" role="group" aria-label="ActionBtn" style="border-radius:24px;">
+          <button type="button" class="btn btn-round btn-secondary" ><i class="fa fa-file-excel-o" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-th" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-secondary"><i class="fa fa-list" aria-hidden="true"></i>
+
+
+
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-round btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-gear" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col">
           <div class="collapse multi-collapse" id="collapsAddEmployee">
