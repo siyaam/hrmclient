@@ -35,7 +35,6 @@
 
       <div class="btn-toolbar justify-content-between" style="margin-bottom:1rem;" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group" role="group" aria-label="First group">
-
           <button type="button" class="btn btn-round btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></button>
           <input type="text"  class="form-control" placeholder="Search" aria-label="toolbar-btn" aria-describedby="btnGroupAddon">
         </div>
@@ -44,11 +43,6 @@
           <button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
           <button type="button" class="btn btn-secondary"><i class="fa fa-th" aria-hidden="true"></i></button>
           <button type="button" class="btn btn-secondary"><i class="fa fa-list" aria-hidden="true"></i></button>
-            <!-- <button type="button" class="btn btn-round btn-secondary"> -->
-
-
-
-
             <div class="dropdown btn-group">
               <button class="btn btn-round btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-gear" aria-hidden="true"></i>
@@ -73,6 +67,7 @@
               <div class="row">
                 <div class="col-sm-12 col-md-12 top-bot">
                       <h4 class="h5">Add Location </h4>
+
                          <form class="">
                            <div class="form-group">
                            <div class="form-group row">
@@ -170,7 +165,8 @@
                   <td>12933.00</td>
                   <td>2</td>
                   <td>12.09.2015</td>
-                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Cristine Felonali (69)</td>
+                  <td class="avatar-sm">
+                    <a href="" data-toggle="popover" data-trigger="hover" data-placement="top" data-container="body" data-html="true"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Cristine Felonali (69)</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
@@ -182,23 +178,62 @@
                   <td>122933.00</td>
                   <td>2</td>
                   <td>12.09.2015</td>
-                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Marinda Manilane (48)</td>
+                  <td class="avatar-sm"> <a href="" data-toggle="popover" data-trigger="hover" data-placement="top" data-container="body" data-html="true"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Marinda Manilane (48)</td>
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
 
                 </tr>
+
+                  <!-- <div class="d-none" id="popover-content" > -->
+
+                  <div class="profile-popover d-none popover-content" id="popover-content">
+                    <div class="profile-top bg-primary">
+                      <div class="profile-popover-front">
+                        <div class="profile-popover-header">
+                          <!-- <span><i class="fa fa-address-card"></i> 1232 </span> -->
+                          <span class="on-circle"> </span>
+                        </div>
+                      </div>
+                      <!-- <div class="profile-popover-title">
+                        <span><i class="fa fa-envelope-square"></i> sousona@example.com </span>
+                      </div> -->
+                    </div>
+                    <div class="profile-popover-avatar">
+                      <img src="{{ asset('img/avatar-3.jpg') }}" height="80" width="80" alt="..." class="rounded-circle card-img-top">
+                    </div>
+                    <div class="card-body mt-4">
+                      <div class="profile-popover-detail">
+                        <h4>Sousona Sisse Al</h4>
+                        <div class="title">Sales and Marketing Executive</div>
+                        <div class="sect border-default">Sales & Marketing</div>
+                      </div>
+
+                        <div class="card-text mt-3">
+                          <span><i class="fa fa-address-card" aria-hidden="true"> </i> ID - 123</span>
+                          <span><i class="fa fa-phone-square" aria-hidden="true"> </i> +960 778 4354</span>
+                          <span><i class="fa fa-envelope-square" aria-hidden="true"> </i> richard@sample.com</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                <!-- </div> -->
+
+
                 <tr>
                   <th scope="row">3</th>
                   <td>Accounting Officer</td>
                   <td>12933.00</td>
                   <td>2</td>
                   <td>22.08.2015</td>
-                   <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Sousona Sisse Al (13)</a></td>
+                  <td class="avatar-sm"> <a href="" data-toggle="popover" data-trigger="hover" data-placement="top" data-container="body" data-html="true"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Sousona Sisse Al (13)</a></td>
+                   <!-- <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Sousona Sisse Al (13)</a></td> -->
                   <td>Active</td>
                   <td><i class="fa fa-times"></i> </td>
                   <td><i class="fa fa-pencil-square-o"></i> </td>
-
+<!-- <a data-placement="top" data-toggle="popover" data-trigger="hover" data-container="body" type="button" data-html="true" href="#" id="login"><span class="fa fa-search" style="margin:3px 0 0 0"></span>hover</a> -->
                 </tr>
                 <tr>
                   <th scope="row">4</th>
@@ -206,7 +241,7 @@
                   <td>10933.00</td>
                   <td>2</td>
                   <td>9.05.2015</td>
-                  <td class="avatar-sm"> <a href="" data-toggle="modal" data-target="#profile-modal"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Aishath Manilia (78)</td>
+                  <td class="avatar-sm"> <a href="" data-toggle="popover" data-trigger="hover" data-placement="top" data-container="body" data-html="true"> <img src="{{ asset('img/avatar-3.jpg') }}" height="30" width="30" alt="..." class="img-fluid rounded-circle"> </a> Aishath Manilia (78)</td>
 
                   <td><span  class="badge badge-warning"> In Active </span</td>
                   <td><i class="fa fa-times"></i> </td>

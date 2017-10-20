@@ -53,18 +53,10 @@ export default StyleSheet.create({
         "display": "inline-block",
         "height": "100%",
         "borderRadius": 4,
-        "position": "relative",
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0
+        "position": "relative"
     },
-    "top-section": {
-        "height": "100px !important",
+    "modal-profile top-section": {
+        "height": 120,
         "borderRadius": "0px 0px 0 0",
         "background": "url(\"http://lorempixel.com/200/300/\")",
         "backgroundSize": "cover",
@@ -127,159 +119,6 @@ export default StyleSheet.create({
         "paddingRight": 0,
         "paddingBottom": 0,
         "paddingLeft": 0
-    },
-    "popover": {
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "width": 20,
-        "maxWidth": 276
-    },
-    "popover-content": {
-        "paddingTop": 0,
-        "paddingRight": "!important",
-        "paddingBottom": 0,
-        "paddingLeft": "!important",
-        "marginTop": 0,
-        "marginRight": "!important",
-        "marginBottom": 0,
-        "marginLeft": "!important",
-        "height": "100%"
-    },
-    "profile-popover": {
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "height": 250
-    },
-    "profile-top": {
-        "height": 80,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "width": "100%",
-        "borderRadius": "4px 4px 0 0",
-        "position": "relative",
-        "border": "none"
-    },
-    "profile-popover-front": {
-        "position": "absolute",
-        "top": 0,
-        "left": 0,
-        "width": "100%",
-        "paddingTop": 5,
-        "paddingRight": 0,
-        "paddingBottom": 5,
-        "paddingLeft": 0
-    },
-    "profile-popover-header": {
-        "position": "relative",
-        "display": "flex",
-        "WebkitJustfyContent": "space-between",
-        "justifyContent": "space-between",
-        "width": "100%",
-        "height": 50,
-        "paddingTop": 0,
-        "paddingRight": 1,
-        "paddingBottom": 0,
-        "paddingLeft": 1,
-        "color": "#fff00"
-    },
-    "profile-popover-header span": {
-        "fontSize": 11,
-        "color": "#ccc",
-        "paddingTop": 4,
-        "paddingRight": 4,
-        "paddingBottom": 4,
-        "paddingLeft": 4
-    },
-    "profile-top profile-popover-title": {
-        "fontSize": 0.65,
-        "position": "absolute",
-        "top": "50%",
-        "right": 1,
-        "color": "#fff",
-        "borderRadius": 15,
-        "border": "1px solid #ccc",
-        "paddingTop": 4,
-        "paddingRight": 6,
-        "paddingBottom": 4,
-        "paddingLeft": 6
-    },
-    "off-circle": {
-        "marginTop": 4,
-        "width": 10,
-        "height": 10,
-        "background": "red",
-        "MozBorderRadius": "50%",
-        "WebkitBorderRadius": "50%",
-        "borderRadius": "50%"
-    },
-    "on-circle": {
-        "marginTop": 4,
-        "width": 10,
-        "height": 10,
-        "background": "green",
-        "MozBorderRadius": "50%",
-        "WebkitBorderRadius": "50%",
-        "borderRadius": "50%"
-    },
-    "profile-popover-avatar": {
-        "position": "absolute",
-        "top": 40,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 1
-    },
-    "profile-popover-detail h4": {
-        "fontSize": 14,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "color": "#666"
-    },
-    "profile-popover-detail title": {
-        "fontSize": 0.75,
-        "color": "#666",
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0
-    },
-    "profile-popover-detail sect": {
-        "fontSize": 0.65,
-        "color": "#999",
-        "borderRadius": 15
-    },
-    "card-text span": {
-        "fontSize": 0.7,
-        "color": "#999",
-        "display": "block"
     },
     "btn-circle": {
         "width": 30,
@@ -425,3 +264,4 @@ export default StyleSheet.create({
         "paddingBottom": 0.6
     }
 });
+//test popover
